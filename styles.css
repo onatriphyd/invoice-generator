@@ -1,0 +1,149 @@
+
+* {padding: 0; margin: 0;}
+
+.flex-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+      background: deepskyblue;
+}
+.imagelogo{
+  margin: 0;
+  padding: 0;
+  
+}
+.logo {
+  margin: 0 0 0 .45em;
+}
+    .logo a {
+      color: rgb(28, 24, 22);
+    }
+
+    .logo, .navigation {
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    .logo a, .navigation a {
+        text-decoration: none;
+        letter-spacing: .45rem;
+    }
+
+.navigation  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+    background: #00ace6;
+}
+/* gallery css */
+
+
+.aboutcon{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+}
+.about{
+  display: flex;
+  width: 50%;
+  position: relative;
+  text-align: justify;
+}
+.happycustomers{
+  display: flex;
+  width: 50%;
+  position: relative;
+  justify-content: center;
+}
+.photoset{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* *********** media queries *********** */
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+  margin: 0;
+}
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
+    
+  }
+}
+
+
+/* ****** ****** */
+@media all and (max-width: 700px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
+  
+  .navigation {
+    flex-direction: row;
+    
+  }
+  
+  .navigation a { 
+    font-size: 12px;
+    padding: 1px;
+    border-top: 1px solid rgba(75, 32, 184, 0.3); 
+    border-bottom: 1px solid rgba(255, 0, 0, 0.1); 
+  }
+  img{
+    height: 115px;
+    width: 150px;
+  }
+  .aboutcon{
+    display: flex;
+    flex-wrap: wrap;
+  }  
+  #imageChange4{
+    display: block;
+    display: none;
+  }
+  #imageChange5{
+    display: block;
+    display: none;
+  }
+  .photoset{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 600px){
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+  }
+  img{
+    height: 185px;
+    width: 185px;
+    padding-left: 5px;
+  }
+  .aboutcon{
+    align-items: center;
+  }
+  
+}
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>On A Trip Hyderabad</title>
+</head>
+<body>
+    <header class="flex-container">
+        
+        <a href="#"><img class="imagelogo"src="admin\20230406_190409_0000.png" alt=""></a>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Catlog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <h6>Hi there, we're</h6>
+        <h1>On A Trip Hyderabad</h1>
+        <div class="aboutcon">
+            <div class="about">
+                <p>
+                    Welcome to On a Trip Hyderabad, your premier travel company that offers affordable packages without compromising on
+                    quality. We are dedicated to providing exceptional customer satisfaction, making us the perfect choice for your next
+                    adventure.
+                    
+                    Whether you're planning a solo trip, a romantic getaway, or travelling with a group, we have a package that suits your
+                    needs. Our experienced professionals take care of everything, including flights, accommodations, transportation, and
+                    even guided tours, to ensure that you have a stress-free experience.
+                    
+                </p>
+            </div>
+            <div class="happycustomers">
+                <div class="photoset -square -portrait"> <!--Can also do portrait or square, remove the "-" prefix-->
+                    <!--Add or remove some of these-->
+                    <img class="photo" id="imageChange1" src="customer/fifteen.jpg"></img>
+                    <img class="photo"  id="imageChange2" src="customer/eight.jpg"></img>
+                    <img class="photo"  id="imageChange3" src="customer/four.jpg"></img>
+                    <img class="photo"  id="imageChange4" src="customer/ten.jpg"></img>
+                    <img class="photo"  id="imageChange5" src="customer/thirteen.jpg"></img>
+
+                 </div> 
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript code
+            let currentIndex = 0; // start with the first image
+            const imageSources = ["customer/fifteen.jpg",
+                    "customer/nine.jpg",
+                    "customer/nineteen.jpg",
+                    "customer/one.jpg",
+                    "customer/seven.jpg"]; // specify the image sources you want to cycle through
+            const imageElement = document.getElementById("imageChange1"); // select the image element
+
+            function changeImage() {
+                // change the image source
+                imageElement.src = imageSources[currentIndex % imageSources.length];
+                // increment the image index
+                console.log(imageElement.src);
+                currentIndex++;
+                // call the function again after 5 seconds
+                setTimeout(changeImage, 5000);
+            }
+
+            // start the image rotation
+            changeImage();
+            let currentIndex1 = 0; // start with the first image
+            const imageSources1 = ["customer/eight.jpg",
+                    "customer/eightteen.jpg",
+                    "customer/eleven.jpg",
+                    "customer/fifteen.jpg",
+                    "customer/five.jpg",
+                    "customer/twentyone.jpg",
+                    "customer/two.jpg"]; // specify the image sources you want to cycle through
+            const imageElement1 = document.getElementById("imageChange2"); // select the image element
+
+            function changeImage1() {
+                // change the image source
+                imageElement1.src = imageSources1[currentIndex1 % imageSources1.length];
+                // increment the image index
+                console.log(imageElement1.src);
+                currentIndex1++;
+                // call the function again after 5 seconds
+                setTimeout(changeImage1, 5000);
+            }
+
+            // start the image rotation
+            changeImage1();
+
+            let currentIndex2 = 0; // start with the first image
+            const imageSources2 = ["customer/four.jpg",
+                    "customer/fourteen.jpg",
+                    "customer/seventeen.jpg",
+                    "customer/six.jpg",
+                    "customer/sixteen.jpg",
+                    "customer/twentyone.jpg",
+                    "customer/two.jpg"]; // specify the image sources you want to cycle through
+            const imageElement2 = document.getElementById("imageChange3"); // select the image element
+
+            function changeImage2() {
+                // change the image source
+                imageElement2.src = imageSources2[currentIndex2 % imageSources2.length];
+                // increment the image index
+                console.log(imageElement2.src);
+                currentIndex2++;
+                // call the function again after 5 seconds
+                setTimeout(changeImage2, 5000);
+            }
+
+            // start the image rotation
+            changeImage2();
+
+            let currentIndex3 = 0; // start with the first image
+            const imageSources3 = ["customer/ten.jpg",
+                    "customer/three.jpg",
+                    "customer/twelve.jpg",
+                    "customer/twenty.jpg",
+                    "customer/twentyfive.jpg",
+                    "customer/twentyone.jpg",
+                    "customer/two.jpg"]; // specify the image sources you want to cycle through
+            const imageElement3 = document.getElementById("imageChange4"); // select the image element
+
+            function changeImage3() {
+                // change the image source
+                imageElement3.src = imageSources3[currentIndex3 % imageSources3.length];
+                // increment the image index
+                console.log(imageElement3.src);
+                currentIndex3++;
+                // call the function again after 5 seconds
+                setTimeout(changeImage3, 5000);
+            }
+
+            // start the image rotation
+            changeImage3();
+
+            let currentIndex4 = 0; // start with the first image
+            const imageSources4 = ["customer/thirteen.jpg",
+                    "customer/twentthree.jpg",
+                    "customer/twentthree.jpg",
+                    "customer/seven.jpg",
+                    "customer/twentytwo.jpg"]; // specify the image sources you want to cycle through
+            const imageElement4 = document.getElementById("imageChange5"); // select the image element
+
+            function changeImage4() {
+                // change the image source
+                imageElement4.src = imageSources4[currentIndex4 % imageSources4.length];
+                // increment the image index
+                console.log(imageElement4.src);
+                currentIndex4++;
+                // call the function again after 5 seconds
+                setTimeout(changeImage4, 5000);
+            }
+
+            // start the image rotation
+            changeImage4();
+
+           
+
+    </script>
+    </body>
+    
+    </html>
