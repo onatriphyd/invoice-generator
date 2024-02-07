@@ -216,7 +216,7 @@
          doc.textWithLink("Email: " + "onatripholidays@gmail.com", 30, 285, { url: 'mailto:onatriphyderabad@gmail.com' });
          doc.textWithLink("Instagram: " + "onatripholidays", 30, 290, { url: 'https://www.instagram.com/onatriphyd/' });
          var filename = bookingid + '-' + customername + '-' + bookingdate + '.pdf';
-         doc=addWaterMark(doc);
+         
          doc.save(filename);
          location.reload();
       }
